@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #ddc6b7;
+  min-height: 100vh;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.clock-container {
+  display: flex;
+}
+
+.clock-item:not(:first-child) {
+  margin-left: 2rem;
+}
+
+.clock-item {
+  max-width: 8rem;
+}
+
+.city-name {
+  text-align: center;}
+
+.container {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+
+.title {
+  margin: 0 0 1rem 1rem;
+}
+
+.input {
+  padding: 0.5rem;
+  border: 2px solid black;
+}
+
+.button-add {
+  width: 7rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border: 2px solid black;
+}
+
+.clock {
+  transform: rotate(-90deg);
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.hand {
+  width: 50%;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 50%;
+}
+
+.hand.hour {
+  height: 4px;
+  width: 35%;
+  background: black;
+}
+
+.hand.minute {
+  height: 3px;
+  width: 45%;
+  background: black;
+}
+
+.hand.second {
+  height: 2px;
+  width: 48%;
+  background: red;
+}
+
+.button-off {
+  position: relative;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: -10px;
+}
